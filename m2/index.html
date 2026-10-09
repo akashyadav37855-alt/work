@@ -1,162 +1,183 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> winfix </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gol &#8211;</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    :root {
+      --primary-bg: #3E3E3E;
+      --secondary-bg: #222;
+      --text-light: #ffffff;
+      --text-muted: #ccc;
+      --highlight: #ffcc00;
+      --whatsapp-green: #00d084;
+      --whatsapp-hover: #00b874;
+    }
+
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      background: #000;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--text-light);
+      text-align: center;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 600px;
+      max-width: 1000px;
       margin: 0 auto;
-      background: #000;
+      text-align: center;
     }
-li{max-width: 500px;margin: 0 auto;color: #ccc;}
 
-    /* Top Image Section */
-    .hero img {
-      width: 100%;
+    .banner img {
+      width: 70%;
+      height: auto;
       display: block;
+      margin: auto;
     }
 
-    /* CTA Section */
-    .cta {
-      padding: 20px;
-      text-align: center;
-    }
+    .button {
 
-    .cta button {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .cta button:hover {
-      opacity: 0.9;
-    }
-
-    /* Content Section */
-    .content {
-      padding: 24px 20px 40px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .content p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #ccc;
-    }
-
-    /* Footer Buttons */
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 20px;
-    }
-
-    .links a {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: transparent;
+      font-family: "Roboto", Sans-serif;
+      font-size: 27px;
+      font-weight: 500;
+      background-image: linear-gradient(180deg, #00BA1A 0%, #195404 100%);
+      box-shadow: 0px 0px 23px 0px #FAE101;
+      border: 2px solid #FFFFFF;
+      border-radius: 35px;
+      padding: 10px 50px;
       text-decoration: none;
-      background: #1a1a1a;
-      color: #fff;
-      padding: 12px;
+      color: white;
+      line-height: 30px;
+      transition: all 0.3s ease;
+
+    }
+
+
+    h2,
+    h3 {
+      font-family: "Roboto", Sans-serif;
+      font-size: 31px;
+      font-weight: 600;
+      color: #FFEB39;
+    }
+
+    p {
       text-align: center;
-      border-radius: 8px;
+      font-family: "Roboto", Sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #E3E3E3;
+    }
+
+    .steps {
+      text-align: left;
+      margin: 20px 40px;
+    }
+
+    .steps p {
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      background-color: var(--primary-bg);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
       font-size: 14px;
     }
 
-    .links a:hover {
-      background: #2a2a2a;
-    }
+    @media (max-width: 600px) {
+      .steps {
+        margin: 15px 20px;
+      }
 
-    footer {
-      padding: 16px;
-      text-align: center;
-      font-size: 12px;
-      color: #777;
+      .button {
+        width: 90%;
+        font-size: 27px;
+        padding: 10px 10px;
+      }
+
+      p {
+        margin: 10px 15px;
+      }
+
+      .banner img {
+        width: 95%;
+        margin-top: 5px;
+        margin-bottom: 5px
+      }
     }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997413358"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17997413358');
-</script>
-
-<script src="../tracking.js"></script>
-<!-- Event snippet for Page view conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17997413358/E1WuCKq-5oMcEO736oVD',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 
 <body>
   <div class="container">
-
-    <!-- Image on Top -->
-    <div class="hero">
-    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
+    <div class="banner">
+      <a onclick="gtag_report_conversion()" href="https://flipchat.pro/neutral/"><img src="600x1100.png" alt="banner"></a>
     </div>
 
-    <!-- Button Section -->
-    <div class="cta">
-      <button >WhatsApp Now</button></a>
+    <a onclick="gtag_report_conversion()" href="https://flipchat.pro/neutral/" class="button">WHATSAPP NOW</a>
+
+    <h2>How It Works</h2>
+    <div class="steps">
+      <p><strong>Step 1:</strong> Share Your Requirement<br>
+        Contact us via call or WhatsApp and tell us about your space — home, office, or commercial site.</p>
+
+      <p><strong>Step 2:</strong> Get Expert Guidance<br>
+        Our team recommends the best CCTV cameras and security solutions tailored to your needs.</p>
+
+      <p><strong>Step 3:</strong> Installation & Support<br>
+        Our professionals install the system and ensure everything works perfectly — with after-sales service and
+        support.</p>
     </div>
 
-    
+    <h3>Why Choose GOLDEN Enterprises?</h3>
+    <div class="steps">
+      <p><strong>Top-Quality Products</strong><br>
+        We deal in trusted CCTV brands offering HD clarity, night vision, and long-term reliability.</p>
 
-    <!-- Extra Links -->
-    <div class="links">
-      <a href="#">Subscribe on Twitch</a>
-      <a href="#">Become a Patron</a>
-      <a href="#">Shop My Work</a>
-      <a href="#">Join My Discord</a>
+      <p><strong>Professional Installation</strong><br>
+        Experienced technicians ensure seamless setup and coverage at every corner.</p>
+
+      <p><strong>Affordable & Transparent Pricing</strong><br>
+        No hidden costs — just quality security within your budget.</p>
+
+      <p><strong>Pan-India Service</strong><br>
+        From Delhi to Mumbai, Bangalore to Chennai — we deliver and install across India.</p>
     </div>
 
-    <footer>
-      © 2026 Anna King. All rights reserved.
-    </footer>
+    <p><strong>We provide CCTV cameras, installation, and security solutions across India — including Delhi, Mumbai,
+        Bangalore, Hyderabad, Chennai, Pune, and more.</strong></p>
 
+    <a onclick="gtag_report_conversion()" href="https://flipchat.pro/neutral/" class="button">NEED HELP? CHAT ON WHATSAPP</a>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Phone:</strong> +91 78888 76777</p>
+      <p><strong>Email:</strong> info@goldenenterprises.live</p>
+      <p><strong>Head Office:</strong> Shastri Market, Nala Rd, Block RZ, Sagar Pur, New Delhi, Delhi 110046, India</p>
+    </div>
   </div>
 </body>
+
 </html>
