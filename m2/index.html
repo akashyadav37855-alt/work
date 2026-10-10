@@ -1,183 +1,224 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gol &#8211;</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> winfix </title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-    :root {
-      --primary-bg: #3E3E3E;
-      --secondary-bg: #222;
-      --text-light: #ffffff;
-      --text-muted: #ccc;
-      --highlight: #ffcc00;
-      --whatsapp-green: #00d084;
-      --whatsapp-hover: #00b874;
-    }
-
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--primary-bg);
-      color: var(--text-light);
-      text-align: center;
+      background: #000;
+      color: #fff;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 600px;
       margin: 0 auto;
-      text-align: center;
+      background: #000;
     }
+li{max-width: 500px;margin: 0 auto;color: #ccc;}
 
-    .banner img {
-      width: 70%;
-      height: auto;
+    /* Top Image Section */
+    .hero img {
+      width: 100%;
       display: block;
-      margin: auto;
     }
 
-    .button {
-
-      display: inline-block;
-      margin-top: 15px;
-      background-color: transparent;
-      font-family: "Roboto", Sans-serif;
-      font-size: 27px;
-      font-weight: 500;
-      background-image: linear-gradient(180deg, #00BA1A 0%, #195404 100%);
-      box-shadow: 0px 0px 23px 0px #FAE101;
-      border: 2px solid #FFFFFF;
-      border-radius: 35px;
-      padding: 10px 50px;
-      text-decoration: none;
-      color: white;
-      line-height: 30px;
-      transition: all 0.3s ease;
-
-    }
-
-
-    h2,
-    h3 {
-      font-family: "Roboto", Sans-serif;
-      font-size: 31px;
-      font-weight: 600;
-      color: #FFEB39;
-    }
-
-    p {
-      text-align: center;
-      font-family: "Roboto", Sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      color: #E3E3E3;
-    }
-
-    .steps {
-      text-align: left;
-      margin: 20px 40px;
-    }
-
-    .steps p {
-      margin-bottom: 10px;
-    }
-
-    .contact-info {
-      background-color: var(--primary-bg);
+    /* CTA Section */
+    .cta {
       padding: 20px;
-      border-radius: 10px;
+      text-align: center;
     }
 
-    .contact-info h3 {
-      margin-bottom: 10px;
+    .cta button {
+      background: #25d366;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
     }
 
-    .contact-info p {
-      margin: 5px 0;
+    .cta button:hover {
+      opacity: 0.9;
+    }
+
+    /* Content Section */
+    .content {
+      padding: 24px 20px 40px;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: #ccc;
+    }
+
+    /* Footer Buttons */
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
       font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-      .steps {
-        margin: 15px 20px;
-      }
+    .links a:hover {
+      background: #2a2a2a;
+    }
 
-      .button {
-        width: 90%;
-        font-size: 27px;
-        padding: 10px 10px;
-      }
-
-      p {
-        margin: 10px 15px;
-      }
-
-      .banner img {
-        width: 95%;
-        margin-top: 5px;
-        margin-bottom: 5px
-      }
+    footer {
+      padding: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997413358"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17997413358');
+</script>
+
+<script src="../tracking.js"></script>
+<!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17997413358/E1WuCKq-5oMcEO736oVD',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
 <body>
   <div class="container">
-    <div class="banner">
-      <a onclick="gtag_report_conversion()" href="https://admin.flipchat.link/pro/ipl2026"><img src="600x1100.png" alt="banner"></a>
+
+    <!-- Image on Top -->
+    <div class="hero">
+    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
     </div>
 
-    <a onclick="gtag_report_conversion()" href="https://admin.flipchat.link/pro/ipl2026" class="button">WHATSAPP NOW</a>
-
-    <h2>How It Works</h2>
-    <div class="steps">
-      <p><strong>Step 1:</strong> Share Your Requirement<br>
-        Contact us via call or WhatsApp and tell us about your space — home, office, or commercial site.</p>
-
-      <p><strong>Step 2:</strong> Get Expert Guidance<br>
-        Our team recommends the best CCTV cameras and security solutions tailored to your needs.</p>
-
-      <p><strong>Step 3:</strong> Installation & Support<br>
-        Our professionals install the system and ensure everything works perfectly — with after-sales service and
-        support.</p>
+    <!-- Button Section -->
+    <div class="cta">
+      <button >WhatsApp Now</button></a>
     </div>
 
-    <h3>Why Choose GOLDEN Enterprises?</h3>
-    <div class="steps">
-      <p><strong>Top-Quality Products</strong><br>
-        We deal in trusted CCTV brands offering HD clarity, night vision, and long-term reliability.</p>
+    <!-- Content Section -->
+    <div class="content">
+      <h2>100% Original Services | Trusted Service Provider</h2>
+      <p>
+        Anna King Consultancy — Empowering Businesses Through Data, Design & Decisions Welcome to Fun888 Consultancy, India’s trusted partner for business growth, digital transformation, and conversion strategy. Based in Pune, we specialize in helping startups and established enterprises turn data insights into measurable results. Whether you’re struggling with low lead quality, high churn rates, or inefficient marketing spend, we bring clarity, structure, and strategy that deliver tangible outcomes.
+      </p></br>
+      <p>
+        Our philosophy is simple: growth begins with understanding. By combining behavioral psychology, marketing analytics, and customer journey mapping, we uncover what truly drives your users — and use that knowledge to design experiences that convert. At Fun888 Consultancy, every decision is supported by research and every recommendation is measurable.
+      </p></br>
+      <p>
+        Our Mission — Conversions That Create Confidence Many businesses measure success in clicks and followers. We measure it in actions and outcomes. Our mission is to help Indian brands move beyond surface-level marketing into data-driven, conversion-optimized growth. We build strategies that don’t just attract attention — they inspire action, build trust, and sustain profitability.
+      </p></br>
+      <p>
+        Through our structured growth programs, we ensure that every rupee you invest delivers real returns. Our consultants dive deep into your funnel, identify bottlenecks, and design measurable solutions to improve acquisition, activation, and retention.
+      </p></br>
 
-      <p><strong>Professional Installation</strong><br>
-        Experienced technicians ensure seamless setup and coverage at every corner.</p>
+  <p>
+        
+Our Core Services 1. Business & Marketing Strategy We partner with leadership teams to create a clear path to growth. From go-to-market planning to revenue optimization, our consulting process blends research, positioning, and performance tracking to ensure alignment with business goals.
+      </p></br>
+      <p>
+<ol>
+       <li> Conversion Optimization (CRO) Turning visitors into customers is both an art and a science. We apply heatmaps, user testing, and A/B experiments to refine your digital experience. Every test is designed to improve engagement, boost trust, and increase conversion rates sustainably.</li>
+<li>Data & Analytics Setup We implement advanced analytics tools that reveal where your leads come from, what actions they take, and what influences their decisions. By integrating platforms like Google Analytics, Tag Manager, and CRM data, we create visibility across your entire funnel.</li>
+<li>Brand Positioning & Communication In a crowded digital world, clarity wins. We craft persuasive messaging and visual design that differentiate your brand and strengthen credibility. Our storytelling frameworks are built to resonate emotionally while aligning with your strategic objectives.</li>
+<li>Customer Retention & Loyalty Systems Growth doesn’t end with acquisition. We help brands design retention flows — including email sequences, loyalty programs, and reactivation campaigns — that increase lifetime value and reduce churn.</li><ol>
+      </p></br>
 
-      <p><strong>Affordable & Transparent Pricing</strong><br>
-        No hidden costs — just quality security within your budget.</p>
+ <p>
+        
+Our Approach — The Fun888 Method Our consulting process is transparent, agile, and performance-driven. We follow a simple but effective four-stage method:
+      </p></br>
 
-      <p><strong>Pan-India Service</strong><br>
-        From Delhi to Mumbai, Bangalore to Chennai — we deliver and install across India.</p>
+
+ <p>
+        
+Discover: We begin with deep discovery — understanding your customers, competitors, and performance data. Diagnose: Using analytics and behavioral insights, we identify what’s working and what’s holding you back. Design: We craft targeted solutions — from new landing pages to automated funnels — designed for measurable impact. Deliver: We execute, monitor, and optimize continuously to ensure your results improve month after month. Industries We Empower Over the years, Fun888 Consultancy has worked with businesses across a wide spectrum of industries, each with unique challenges and opportunities:
+      </p></br>
+
+
+ <p>
+        
+Technology & SaaS: Simplifying onboarding and boosting trial-to-paid conversions. Retail & E-Commerce: Increasing cart completion rates and repeat purchases. Finance & Insurance: Streamlining lead qualification and improving trust-driven conversion funnels. Healthcare & Wellness: Building compliant, conversion-optimized patient acquisition systems. Education & Training: Enhancing enrollment rates through persuasive communication and optimized flows. Why Businesses Trust Fun888 Consultancy What sets Fun888 Consultancy apart is our commitment to clarity, ethics, and measurable growth. We don’t sell shortcuts; we build systems. We’re known for combining empathy with analytics, ensuring every campaign respects both user intent and business goals.
+      </p></br>
+
+
+ <p>
+Our clients stay with us not because they have to — but because they see results. From better lead quality to improved ROI, every engagement brings accountability and transparency. We work as your strategic partner, not an external vendor.
+      </p></br>
+
+
+ <p>
+Our Promise to You When you work with Fun888 Consultancy, you gain a partner obsessed with outcomes. We promise:
+      </p></br>
+
+ <p>
+Data-driven recommendations that are actionable and clear. Ethical marketing that prioritizes user trust. Transparent reporting and regular performance reviews. Ongoing collaboration focused on continuous improvement. Start Your Growth Journey with Fun888 Consultancy Book a discovery session today and see how we can help you turn potential into performance. Let’s define your biggest opportunities and design a roadmap for measurable, sustainable growth.
+      </p></br>
+
+ <p>
+Fun888 Consultancy 401, Solaris Business Hub, Baner, Pune, Maharashtra, India — 411045 📞 
+      </p></br>
     </div>
 
-    <p><strong>We provide CCTV cameras, installation, and security solutions across India — including Delhi, Mumbai,
-        Bangalore, Hyderabad, Chennai, Pune, and more.</strong></p>
-
-    <a onclick="gtag_report_conversion()" href="https://admin.flipchat.link/pro/ipl2026" class="button">NEED HELP? CHAT ON WHATSAPP</a>
-
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p><strong>Phone:</strong> +91 78888 76777</p>
-      <p><strong>Email:</strong> info@goldenenterprises.live</p>
-      <p><strong>Head Office:</strong> Shastri Market, Nala Rd, Block RZ, Sagar Pur, New Delhi, Delhi 110046, India</p>
+    <!-- Extra Links -->
+    <div class="links">
+      <a href="#">Subscribe on Twitch</a>
+      <a href="#">Become a Patron</a>
+      <a href="#">Shop My Work</a>
+      <a href="#">Join My Discord</a>
     </div>
+
+    <footer>
+      © 2026 Anna King. All rights reserved.
+    </footer>
+
   </div>
 </body>
-
 </html>
