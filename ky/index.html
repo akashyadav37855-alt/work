@@ -1,98 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MAHI AC Services provides expert AC repair, installation, gas filling, cleaning, maintenance, and AMC support with fast doorstep service.">
-  <meta name="keywords" content="AC repair, AC installation, AC service, gas filling, AC maintenance, MAHI AC Services">
-  <meta name="author" content="MAHI AC Services">
-  <title>MAHI AC Services | Expert AC Repair & Installation</title>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-    <style>
-/* Mobile Popup */
-/* Popup Overlay */
-.popup-overlay{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    background:rgba(0,0,0,.75);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:999999;
-    padding:16px;
-    box-sizing:border-box;
-}
-
-/* Popup Box */
-.popup-box{
-    position:relative;
-    width:100%;
-    max-width:420px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-/* Image */
-.popup-box img{
-    width:100%;
-    max-width:420px;
-    max-height:90vh;      /* Screen ke andar rahe */
-    height:auto;
-    object-fit:contain;   /* Crop nahi hoga */
-    display:block;
-    border-radius:18px;
-}
-
-/* Close Button */
-.popup-close{
-    position:absolute;
-    top:-12px;
-    right:-12px;
-    width:36px;
-    height:36px;
-    border:none;
-    border-radius:50%;
-    background:#fff;
-    font-size:22px;
-    cursor:pointer;
-    z-index:10;
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-    .popup-overlay{
-        padding:20px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> winfix </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .popup-box{
-        max-width:340px;
-        margin:auto;
+    body {
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
     }
 
-    .popup-box img{
-        width:100%;
-        max-width:340px;
-        max-height:80vh;
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #000;
     }
-}
-</style>
+li{max-width: 500px;margin: 0 auto;color: #ccc;}
+
+    /* Top Image Section */
+    .hero img {
+      width: 100%;
+      display: block;
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cta button {
+      background: #25d366;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cta button:hover {
+      opacity: 0.9;
+    }
+
+    /* Content Section */
+    .content {
+      padding: 24px 20px 40px;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: #ccc;
+    }
+
+    /* Footer Buttons */
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      background: #2a2a2a;
+    }
+
+    footer {
+      padding: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18506359088"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997413358"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-18506359088');
+  gtag('config', 'AW-17997413358');
 </script>
-<!-- Event snippet for Outbound click conversion page
+
+<script src="../tracking.js"></script>
+<!-- Event snippet for Page view conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -102,7 +121,7 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-18506359088/DqU5CKai55gdELDCwvhE',
+      'send_to': 'AW-17997413358/E1WuCKq-5oMcEO736oVD',
       'value': 1.0,
       'currency': 'INR',
       'event_callback': callback
@@ -111,452 +130,95 @@ function gtag_report_conversion(url) {
 }
 </script>
 
-</head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="logo" href="#home" aria-label="MAHI AC Services home">
-        <span class="logo-mark"><i class="fa-solid fa-snowflake"></i></span>
-        <span>MAHI AC Services</span>
-      </a>
+  <div class="container">
 
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
-      <label class="nav-button" for="nav-toggle" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Premium AC care at your doorstep</p>
-          <h1>Expert AC Repair &amp; Installation Services</h1>
-          <p class="hero-text">We provide professional AC installation, repair, gas filling, maintenance, and annual servicing with affordable pricing and fast doorstep support.</p>
-          <div class="hero-actions" aria-label="Service actions">
-            <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-calendar-check"></i>Book Service</a>
-            <a class="btn btn-secondary" href="tel:+919999999999"><i class="fa-solid fa-phone"></i>Call Now</a>
-          </div>
-          <div class="trust-badges" aria-label="Trust badges">
-            <span>&#10003; Same Day Service</span>
-            <span>&#10003; Certified Technicians</span>
-            <span>&#10003; Affordable Pricing</span>
-            <span>&#10003; 100% Satisfaction</span>
-          </div>
-        </div>
-
-        <figure class="hero-media">
-          <img src="assets/hero-ac-service.png" alt="Professional AC technician repairing a modern split air conditioner">
-          <figcaption class="hero-card glass-card">
-            <i class="fa-solid fa-shield-heart"></i>
-            <span>Trusted home AC experts</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Our services</p>
-          <h2>Complete AC Solutions</h2>
-          <p>From first installation to emergency repairs, our team keeps your cooling system efficient, clean, and reliable.</p>
-        </div>
-
-        <div class="card-grid service-grid">
-          <article class="service-card">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h3>AC Installation</h3>
-            <p>Precision split and window AC installation with safe mounting, wiring, and performance checks.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-toolbox"></i>
-            <h3>AC Repair</h3>
-            <p>Quick diagnosis and repair for cooling problems, unusual noise, electrical issues, and breakdowns.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-gauge-high"></i>
-            <h3>AC Gas Filling</h3>
-            <p>Leak inspection, pressure testing, and refrigerant refill for better cooling and lower power use.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-soap"></i>
-            <h3>AC Cleaning</h3>
-            <p>Deep cleaning for filters, coils, blower, and drains to improve airflow and indoor air quality.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-fan"></i>
-            <h3>AC Maintenance</h3>
-            <p>Seasonal tune-ups that reduce sudden failures and extend the life of your AC system.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-file-signature"></i>
-            <h3>AMC Service</h3>
-            <p>Annual maintenance plans with scheduled visits, priority support, and dependable service records.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-droplet"></i>
-            <h3>Water Leakage Repair</h3>
-            <p>Drain line cleaning, tray inspection, and leakage fixes for neat, worry-free cooling.</p>
-          </article>
-          <article class="service-card">
-            <i class="fa-solid fa-microchip"></i>
-            <h3>Compressor Repair</h3>
-            <p>Expert compressor checks, relay repairs, capacitor replacement, and cooling system restoration.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="section section-soft" id="why-us">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Why choose us</p>
-          <h2>Service Built Around Trust</h2>
-          <p>Clear pricing, trained technicians, and careful workmanship make every visit simple and stress-free.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card"><i class="fa-solid fa-user-gear"></i><h3>Experienced Technicians</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-certificate"></i><h3>Genuine Spare Parts</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-bolt"></i><h3>Fast Response</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-receipt"></i><h3>Transparent Pricing</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-house-chimney"></i><h3>Doorstep Service</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-headset"></i><h3>Emergency Support</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-award"></i><h3>Warranty</h3></article>
-          <article class="feature-card"><i class="fa-solid fa-face-smile"></i><h3>Customer Satisfaction</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">How it works</p>
-          <h2>Simple Booking, Smooth Service</h2>
-        </div>
-
-        <div class="steps-grid">
-          <article class="step-card">
-            <span>01</span>
-            <i class="fa-solid fa-calendar-plus"></i>
-            <h3>Book Service</h3>
-            <p>Share your AC issue and preferred time.</p>
-          </article>
-          <article class="step-card">
-            <span>02</span>
-            <i class="fa-solid fa-person-walking-luggage"></i>
-            <h3>Technician Visit</h3>
-            <p>Our expert arrives with tools and parts.</p>
-          </article>
-          <article class="step-card">
-            <span>03</span>
-            <i class="fa-solid fa-clipboard-check"></i>
-            <h3>Repair &amp; Testing</h3>
-            <p>We fix, test, and verify cooling output.</p>
-          </article>
-          <article class="step-card">
-            <span>04</span>
-            <i class="fa-solid fa-thumbs-up"></i>
-            <h3>Happy Customer</h3>
-            <p>Enjoy reliable cooling and support.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Brands -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Brands we service</p>
-          <h2>Expertise Across Leading AC Brands</h2>
-        </div>
-        <div class="brand-grid" aria-label="AC brands serviced">
-          <span>Daikin</span>
-          <span>LG</span>
-          <span>Samsung</span>
-          <span>Voltas</span>
-          <span>Blue Star</span>
-          <span>Hitachi</span>
-          <span>Carrier</span>
-          <span>Panasonic</span>
-          <span>Whirlpool</span>
-          <span>Lloyd</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Statistics -->
-    <section class="stats-section">
-      <div class="container stats-grid">
-        <article class="stat-card"><strong>5000+</strong><span>Happy Customers</span></article>
-        <article class="stat-card"><strong>10+</strong><span>Years Experience</span></article>
-        <article class="stat-card"><strong>24/7</strong><span>Support</span></article>
-        <article class="stat-card"><strong>98%</strong><span>Customer Satisfaction</span></article>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section" id="pricing">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Pricing</p>
-          <h2>Clear Service Packages</h2>
-          <p>Choose the plan that matches your AC needs. Final pricing is confirmed after inspection when parts are required.</p>
-        </div>
-
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <h3>Basic Service</h3>
-            <p class="price">&#8377;499</p>
-            <ul>
-              <li>Filter cleaning</li>
-              <li>Cooling inspection</li>
-              <li>Drain check</li>
-              <li>Basic performance report</li>
-            </ul>
-            <a class="btn btn-outline" href="#contact">Book Now</a>
-          </article>
-          <article class="pricing-card featured">
-            <span class="plan-tag">Popular</span>
-            <h3>Deep Cleaning</h3>
-            <p class="price">&#8377;999</p>
-            <ul>
-              <li>Indoor unit jet cleaning</li>
-              <li>Coil and blower cleaning</li>
-              <li>Drain pipe flush</li>
-              <li>Complete cooling test</li>
-            </ul>
-            <a class="btn btn-primary" href="#contact">Book Now</a>
-          </article>
-          <article class="pricing-card">
-            <h3>Installation Service</h3>
-            <p class="price">&#8377;1499</p>
-            <ul>
-              <li>Split AC installation</li>
-              <li>Mounting and alignment</li>
-              <li>Pipe and wiring check</li>
-              <li>Final demo and testing</li>
-            </ul>
-            <a class="btn btn-outline" href="#contact">Book Now</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section section-soft" id="reviews">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Reviews</p>
-          <h2>Customers Love Our Service</h2>
-        </div>
-
-        <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <div class="review-top">
-              <span class="avatar">RK</span>
-              <div>
-                <h3>Ravi Kumar</h3>
-                <p class="rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              </div>
-            </div>
-            <p>Very professional service. The technician arrived on time, explained the issue clearly, and fixed our AC cooling problem quickly.</p>
-          </article>
-          <article class="testimonial-card">
-            <div class="review-top">
-              <span class="avatar">SP</span>
-              <div>
-                <h3>Sneha Patel</h3>
-                <p class="rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              </div>
-            </div>
-            <p>Booked deep cleaning before summer. The airflow improved immediately and the pricing was transparent from the start.</p>
-          </article>
-          <article class="testimonial-card">
-            <div class="review-top">
-              <span class="avatar">AM</span>
-              <div>
-                <h3>Amit Mehra</h3>
-                <p class="rating" aria-label="5 star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              </div>
-            </div>
-            <p>They installed our new split AC neatly and tested everything before leaving. Excellent support and clean workmanship.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section">
-      <div class="container faq-container">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>Common Questions</h2>
-        </div>
-
-        <div class="faq-list">
-          <details open>
-            <summary>How often should AC be serviced?</summary>
-            <p>For regular home use, service your AC at least twice a year, ideally before and during peak summer.</p>
-          </details>
-          <details>
-            <summary>What is included in gas filling?</summary>
-            <p>We inspect for leaks, check pressure levels, refill refrigerant as required, and test cooling performance.</p>
-          </details>
-          <details>
-            <summary>Do you provide warranty?</summary>
-            <p>Yes, warranty is provided on eligible repairs and parts based on the service type and spare part used.</p>
-          </details>
-          <details>
-            <summary>Is same-day service available?</summary>
-            <p>Yes, same-day service is available in most areas depending on technician availability and booking time.</p>
-          </details>
-          <details>
-            <summary>Which brands do you repair?</summary>
-            <p>We service major brands including Daikin, LG, Samsung, Voltas, Blue Star, Hitachi, Carrier, Panasonic, Whirlpool, and Lloyd.</p>
-          </details>
-          <details>
-            <summary>Do you install new ACs?</summary>
-            <p>Yes, we install new split and window AC units with proper mounting, wiring checks, and final testing.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <p class="eyebrow">Contact us</p>
-          <h2>Book Reliable AC Service Today</h2>
-          <p>Tell us what your AC needs and our support team will schedule a technician visit at your convenience.</p>
-
-          <div class="contact-list">
-            <a href="tel:+919999999999"><i class="fa-solid fa-phone"></i><span>+91 99999 99999</span></a>
-            <a href="mailto:info@MAHIacservices.com"><i class="fa-solid fa-envelope"></i><span>info@MAHIacservices.com</span></a>
-            <p><i class="fa-solid fa-location-dot"></i><span>Doorstep AC service across your city</span></p>
-            <p><i class="fa-solid fa-clock"></i><span>Open daily: 8:00 AM - 10:00 PM</span></p>
-          </div>
-        </div>
-
-        <form class="contact-form" action="#" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-
-          <label for="service">Service</label>
-          <select id="service" name="service" required>
-            <option value="">Select a service</option>
-            <option>AC Installation</option>
-            <option>AC Repair</option>
-            <option>AC Gas Filling</option>
-            <option>AC Cleaning</option>
-            <option>AMC Service</option>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your AC issue"></textarea>
-
-          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <a
-    class="whatsapp-float"
-    href="https://wa.me/919204015797?text=i%20want%20to%20know%20more.."
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with MAHI AC Services on WhatsApp"
-    onclick="return typeof gtag_report_conversion === 'function' ? gtag_report_conversion(this.href) : true;"
-  >
-    <i class="fa-brands fa-whatsapp"></i>
-    <span>WhatsApp</span>
-  </a>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="logo footer-logo" href="#home">
-          <span class="logo-mark"><i class="fa-solid fa-snowflake"></i></span>
-          <span>MAHI AC Services</span>
-        </a>
-        <p>Professional AC repair, installation, maintenance, cleaning, and AMC support with dependable doorstep service.</p>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#services">AC Installation</a></li>
-          <li><a href="#services">AC Repair</a></li>
-          <li><a href="#services">Gas Filling</a></li>
-          <li><a href="#services">AC Maintenance</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact Details</h3>
-        <ul>
-          <li><a href="tel:+919999999999">+91 99999 99999</a></li>
-          <li><a href="mailto:info@MAHIacservices.com">info@MAHIacservices.com</a></li>
-          <li>8:00 AM - 10:00 PM</li>
-        </ul>
-      </div>
+    <!-- Image on Top -->
+    <div class="hero">
+    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 MAHI AC Services. All rights reserved.</p>
+
+    <!-- Button Section -->
+    <div class="cta">
+      <button >WhatsApp Now</button></a>
     </div>
-  </footer>
-  <div id="mobilePopup" class="popup-overlay">
-    <div class="popup-box">
-        <button class="popup-close" onclick="closePopup()">×</button>
 
-        <a href="https://admin.flipchat.link/pro/ipl2026" target="_blank" >
-            <img src="600x1100.png" alt="Offer">
-        </a>
+    <!-- Content Section -->
+    <div class="content">
+      <h2>100% Original Services | Trusted Service Provider</h2>
+      <p>
+        Anna King Consultancy — Empowering Businesses Through Data, Design & Decisions Welcome to Fun888 Consultancy, India’s trusted partner for business growth, digital transformation, and conversion strategy. Based in Pune, we specialize in helping startups and established enterprises turn data insights into measurable results. Whether you’re struggling with low lead quality, high churn rates, or inefficient marketing spend, we bring clarity, structure, and strategy that deliver tangible outcomes.
+      </p></br>
+      <p>
+        Our philosophy is simple: growth begins with understanding. By combining behavioral psychology, marketing analytics, and customer journey mapping, we uncover what truly drives your users — and use that knowledge to design experiences that convert. At Fun888 Consultancy, every decision is supported by research and every recommendation is measurable.
+      </p></br>
+      <p>
+        Our Mission — Conversions That Create Confidence Many businesses measure success in clicks and followers. We measure it in actions and outcomes. Our mission is to help Indian brands move beyond surface-level marketing into data-driven, conversion-optimized growth. We build strategies that don’t just attract attention — they inspire action, build trust, and sustain profitability.
+      </p></br>
+      <p>
+        Through our structured growth programs, we ensure that every rupee you invest delivers real returns. Our consultants dive deep into your funnel, identify bottlenecks, and design measurable solutions to improve acquisition, activation, and retention.
+      </p></br>
+
+  <p>
+        
+Our Core Services 1. Business & Marketing Strategy We partner with leadership teams to create a clear path to growth. From go-to-market planning to revenue optimization, our consulting process blends research, positioning, and performance tracking to ensure alignment with business goals.
+      </p></br>
+      <p>
+<ol>
+       <li> Conversion Optimization (CRO) Turning visitors into customers is both an art and a science. We apply heatmaps, user testing, and A/B experiments to refine your digital experience. Every test is designed to improve engagement, boost trust, and increase conversion rates sustainably.</li>
+<li>Data & Analytics Setup We implement advanced analytics tools that reveal where your leads come from, what actions they take, and what influences their decisions. By integrating platforms like Google Analytics, Tag Manager, and CRM data, we create visibility across your entire funnel.</li>
+<li>Brand Positioning & Communication In a crowded digital world, clarity wins. We craft persuasive messaging and visual design that differentiate your brand and strengthen credibility. Our storytelling frameworks are built to resonate emotionally while aligning with your strategic objectives.</li>
+<li>Customer Retention & Loyalty Systems Growth doesn’t end with acquisition. We help brands design retention flows — including email sequences, loyalty programs, and reactivation campaigns — that increase lifetime value and reduce churn.</li><ol>
+      </p></br>
+
+ <p>
+        
+Our Approach — The Fun888 Method Our consulting process is transparent, agile, and performance-driven. We follow a simple but effective four-stage method:
+      </p></br>
+
+
+ <p>
+        
+Discover: We begin with deep discovery — understanding your customers, competitors, and performance data. Diagnose: Using analytics and behavioral insights, we identify what’s working and what’s holding you back. Design: We craft targeted solutions — from new landing pages to automated funnels — designed for measurable impact. Deliver: We execute, monitor, and optimize continuously to ensure your results improve month after month. Industries We Empower Over the years, Fun888 Consultancy has worked with businesses across a wide spectrum of industries, each with unique challenges and opportunities:
+      </p></br>
+
+
+ <p>
+        
+Technology & SaaS: Simplifying onboarding and boosting trial-to-paid conversions. Retail & E-Commerce: Increasing cart completion rates and repeat purchases. Finance & Insurance: Streamlining lead qualification and improving trust-driven conversion funnels. Healthcare & Wellness: Building compliant, conversion-optimized patient acquisition systems. Education & Training: Enhancing enrollment rates through persuasive communication and optimized flows. Why Businesses Trust Fun888 Consultancy What sets Fun888 Consultancy apart is our commitment to clarity, ethics, and measurable growth. We don’t sell shortcuts; we build systems. We’re known for combining empathy with analytics, ensuring every campaign respects both user intent and business goals.
+      </p></br>
+
+
+ <p>
+Our clients stay with us not because they have to — but because they see results. From better lead quality to improved ROI, every engagement brings accountability and transparency. We work as your strategic partner, not an external vendor.
+      </p></br>
+
+
+ <p>
+Our Promise to You When you work with Fun888 Consultancy, you gain a partner obsessed with outcomes. We promise:
+      </p></br>
+
+ <p>
+Data-driven recommendations that are actionable and clear. Ethical marketing that prioritizes user trust. Transparent reporting and regular performance reviews. Ongoing collaboration focused on continuous improvement. Start Your Growth Journey with Fun888 Consultancy Book a discovery session today and see how we can help you turn potential into performance. Let’s define your biggest opportunities and design a roadmap for measurable, sustainable growth.
+      </p></br>
+
+ <p>
+Fun888 Consultancy 401, Solaris Business Hub, Baner, Pune, Maharashtra, India — 411045 📞 
+      </p></br>
     </div>
-</div>
 
-<script>
-window.onload = function () {
-    setTimeout(function () {
-        document.getElementById("mobilePopup").style.display = "flex";
-    }, 100);
-};
+    <!-- Extra Links -->
+    <div class="links">
+      <a href="#">Subscribe on Twitch</a>
+      <a href="#">Become a Patron</a>
+      <a href="#">Shop My Work</a>
+      <a href="#">Join My Discord</a>
+    </div>
 
-function closePopup() {
-    document.getElementById("mobilePopup").style.display = "none";
-}
-</script>
+    <footer>
+      © 2026 Anna King. All rights reserved.
+    </footer>
+
+  </div>
 </body>
 </html>
